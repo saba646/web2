@@ -1,0 +1,141 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.nav{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vw;
+    border-bottom: 1px solid black;
+}
+#main-h2{
+    font-size: 3vw;
+    
+}
+.nav-2{
+    display: flex;
+    gap: 6vw;
+    font-size: 10px;
+    align-items: center;
+}
+.nav-2 h4{
+    font-size: 1.5vw;
+}
+.nav-2 i{
+    font-size: 2vw;
+    font-weight: 300px;
+    display: none;
+}
+.nav button{
+    font-size: 1.1vw;
+    padding: 1vw 1.5vw;
+    background-color:#eb4034;
+    color: #fff;
+  border: none;
+    border-radius: 5px;
+
+}
+.content{
+    height:100%;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.left{
+    height:100%;
+    width: 50%;
+    padding: 4vw 4vw;
+}
+.left h1 span{
+    color:#eb4034;
+}
+.left h1{
+    font-size: 4.5vw;
+    line-height: 5vw
+}
+.left p{
+    font-size: 1.4vw;
+    font-weight: 2vw;
+    color: #666;
+    margin-top: 2vw;
+    margin-bottom: 4vw;
+}
+.content button{
+    font: 1.2vw;
+    padding: 1.2vw 3vw;
+    background-color:#eb4034;
+    color: #fff;
+  border: none;
+    border-radius: 5px;
+}
+.right{
+    height:100%;
+    width: 50%;
+   background-image: url(./image3.webp);
+}
+.right image{
+    height: 100%;
+    width: 50%;
+}
+
+@media (max-width:600px) {
+    .nav{
+    
+        padding: 0 3vw;
+    }
+    #main-h2{
+        font-size: 5vmax;
+    }
+    .nav-2 h4{
+        font-size: 2vmax;
+        display: none;
+    }
+    .nav-2 i{
+        font-size: 3vmax;
+        display: initial;
+    }
+    .nav button{
+        display: none;
+    }
+    .content{
+        height: 200%;
+        flex-direction: column;
+    }
+    .content h1{
+        font-size:7vw;
+        line-height: 8vw;
+    }
+    .content p{
+        font-size: 2.5vw;
+    }
+    .left{
+        width: 100%;
+        height: 50%;
+    }
+    .right{
+        width: 100%;
+        height: 100%;
+    }
+    .right image{
+        height: 60%;
+        width: 100%;
+    }
+
+    
+
+    
+}
